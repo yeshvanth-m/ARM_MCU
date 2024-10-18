@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log ARM_MCU_util_vector_logic_5_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ARM_MCU_util_vector_logic_5_0.tcl
+

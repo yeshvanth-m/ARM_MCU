@@ -1,0 +1,477 @@
+
+*** Running vivado
+    with args -log ARM_MCU_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ARM_MCU_wrapper.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source ARM_MCU_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/DOCS/ARM/AT426-r0p1-00rel0-1/AT426-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/DOCS/ARM/AT472-r0p1-00rel0-1/AT472-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/SW/Xilinx/Vivado/2018.2/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Arm.com:user:DAPLink_to_Arty_shield:1.0'. The one found in IP location 'e:/DOCS/ARM/AT426-r0p1-00rel0-1/AT426-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository/DAPLink_to_Arty_shield' will take precedence over the same IP in location e:/DOCS/ARM/AT472-r0p1-00rel0-1/AT472-BU-98000-r0p1-00rel0/vivado/Arm_ipi_repository/DAPLink_to_Arty_shield
+Command: synth_design -top ARM_MCU_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22248 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 420.816 ; gain = 104.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_wrapper' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/hdl/ARM_MCU_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_CORTEXM3_AXI_0_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_CORTEXM3_AXI_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_CORTEXM3_AXI_0_0' (1#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_CORTEXM3_AXI_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'CORTEXM3_AXI_0' of module 'ARM_MCU_CORTEXM3_AXI_0_0' requires 90 connections, but only 82 given [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:185]
+INFO: [Synth 8-6157] synthesizing module 'Reset_and_Clocks_imp_1CGMSPC' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:1499]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_rst_clk_wiz_0_50M_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_rst_clk_wiz_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_rst_clk_wiz_0_50M_0' (2#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_rst_clk_wiz_0_50M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'External_Reset' of module 'ARM_MCU_rst_clk_wiz_0_50M_0' requires 10 connections, but only 8 given [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:1544]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_util_vector_logic_4_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_util_vector_logic_4_0' (3#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_util_vector_logic_5_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_util_vector_logic_5_0' (4#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_proc_sys_reset_0_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_proc_sys_reset_0_0' (5#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'System_Reset' of module 'ARM_MCU_proc_sys_reset_0_0' requires 10 connections, but only 8 given [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:1561]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_clk_wiz_0_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_clk_wiz_0_0' (6#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_util_vector_logic_0_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_util_vector_logic_0_0' (7#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_util_vector_logic_1_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_util_vector_logic_1_0' (8#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_util_vector_logic_2_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_util_vector_logic_2_0' (9#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_util_vector_logic_3_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_util_vector_logic_3_0' (10#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_util_vector_logic_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_xlconstant_0_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_xlconstant_0_0' (11#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Reset_and_Clocks_imp_1CGMSPC' (12#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:1499]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_axi_bram_ctrl_0_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_axi_bram_ctrl_0_0' (13#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_axi_bram_ctrl_0_bram_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_axi_bram_ctrl_0_bram_0' (14#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_axi_interconnect_0_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:489]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_SSHLSC' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:1592]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_SSHLSC' (15#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:1592]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1Q9BXLB' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:1850]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_auto_pc_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_auto_pc_0' (16#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'ARM_MCU_auto_pc_0' requires 60 connections, but only 58 given [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:2089]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1Q9BXLB' (17#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:1850]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1QF9XJK' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:2150]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_auto_pc_1' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_auto_pc_1' (18#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'ARM_MCU_auto_pc_1' requires 74 connections, but only 72 given [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:2437]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1QF9XJK' (19#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:2150]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_SOI53N' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:2512]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_auto_pc_2' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_auto_pc_2' (20#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'ARM_MCU_auto_pc_2' requires 74 connections, but only 72 given [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:2799]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_SOI53N' (21#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:2512]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_xbar_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_xbar_0' (22#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'ARM_MCU_xbar_0' requires 82 connections, but only 78 given [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:1418]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_axi_interconnect_0_0' (23#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:489]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_axi_uartlite_0_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_axi_uartlite_0_0' (24#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'ARM_MCU_axi_uartlite_0_0' requires 22 connections, but only 21 given [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:459]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_tri_io_buf_0_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_tri_io_buf_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_tri_io_buf_0_0' (25#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_tri_io_buf_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'tri_io_buf_0' of module 'ARM_MCU_tri_io_buf_0_0' requires 4 connections, but only 3 given [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:481]
+INFO: [Synth 8-6157] synthesizing module 'ARM_MCU_xlconstant_1_0' [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_xlconstant_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_xlconstant_1_0' (26#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/.Xil/Vivado-24464-Yeshvanth-Workstation/realtime/ARM_MCU_xlconstant_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU' (27#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/synth/ARM_MCU.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_MCU_wrapper' (28#1) [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/hdl/ARM_MCU_wrapper.v:12]
+WARNING: [Synth 8-3331] design s01_couplers_imp_SOI53N has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_SOI53N has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1QF9XJK has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1QF9XJK has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1Q9BXLB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1Q9BXLB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_SSHLSC has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_SSHLSC has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_SSHLSC has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_SSHLSC has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port S01_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 477.602 ; gain = 161.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 477.602 ; gain = 161.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 477.602 ; gain = 161.254
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_CORTEXM3_AXI_0_0/ARM_MCU_CORTEXM3_AXI_0_0/ARM_MCU_CORTEXM3_AXI_0_0_in_context.xdc] for cell 'ARM_MCU_i/CORTEXM3_AXI_0'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_CORTEXM3_AXI_0_0/ARM_MCU_CORTEXM3_AXI_0_0/ARM_MCU_CORTEXM3_AXI_0_0_in_context.xdc] for cell 'ARM_MCU_i/CORTEXM3_AXI_0'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_clk_wiz_0_0/ARM_MCU_clk_wiz_0_0/ARM_MCU_clk_wiz_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/clk_wiz_0'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_clk_wiz_0_0/ARM_MCU_clk_wiz_0_0/ARM_MCU_clk_wiz_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/clk_wiz_0'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_rst_clk_wiz_0_50M_0/ARM_MCU_rst_clk_wiz_0_50M_0/ARM_MCU_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/External_Reset'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_rst_clk_wiz_0_50M_0/ARM_MCU_rst_clk_wiz_0_50M_0/ARM_MCU_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/External_Reset'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_proc_sys_reset_0_0/ARM_MCU_proc_sys_reset_0_0/ARM_MCU_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/System_Reset'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_proc_sys_reset_0_0/ARM_MCU_proc_sys_reset_0_0/ARM_MCU_rst_clk_wiz_0_50M_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/System_Reset'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_0_0/ARM_MCU_util_vector_logic_0_0/ARM_MCU_util_vector_logic_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/util_vector_logic_0'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_0_0/ARM_MCU_util_vector_logic_0_0/ARM_MCU_util_vector_logic_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/util_vector_logic_0'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_xlconstant_0_0/ARM_MCU_xlconstant_0_0/ARM_MCU_xlconstant_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/xlconstant_0'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_xlconstant_0_0/ARM_MCU_xlconstant_0_0/ARM_MCU_xlconstant_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/xlconstant_0'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_1_0/ARM_MCU_util_vector_logic_1_0/ARM_MCU_util_vector_logic_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/util_vector_logic_1'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_1_0/ARM_MCU_util_vector_logic_1_0/ARM_MCU_util_vector_logic_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/util_vector_logic_1'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_2_0/ARM_MCU_util_vector_logic_2_0/ARM_MCU_util_vector_logic_2_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/util_vector_logic_2'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_2_0/ARM_MCU_util_vector_logic_2_0/ARM_MCU_util_vector_logic_2_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/util_vector_logic_2'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_3_0/ARM_MCU_util_vector_logic_3_0/ARM_MCU_util_vector_logic_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/util_vector_logic_3'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_3_0/ARM_MCU_util_vector_logic_3_0/ARM_MCU_util_vector_logic_0_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/util_vector_logic_3'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_4_0/ARM_MCU_util_vector_logic_4_0/ARM_MCU_util_vector_logic_4_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/Interconnect_Reset_AND'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_4_0/ARM_MCU_util_vector_logic_4_0/ARM_MCU_util_vector_logic_4_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/Interconnect_Reset_AND'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_5_0/ARM_MCU_util_vector_logic_5_0/ARM_MCU_util_vector_logic_4_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/Peripheral_Reset_AND'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_util_vector_logic_5_0/ARM_MCU_util_vector_logic_5_0/ARM_MCU_util_vector_logic_4_0_in_context.xdc] for cell 'ARM_MCU_i/Reset_and_Clocks/Peripheral_Reset_AND'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_xbar_0/ARM_MCU_xbar_0/ARM_MCU_xbar_0_in_context.xdc] for cell 'ARM_MCU_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_xbar_0/ARM_MCU_xbar_0/ARM_MCU_xbar_0_in_context.xdc] for cell 'ARM_MCU_i/axi_interconnect_0/xbar'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_xlconstant_1_0/ARM_MCU_xlconstant_1_0/ARM_MCU_xlconstant_1_0_in_context.xdc] for cell 'ARM_MCU_i/xlconstant_1'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_xlconstant_1_0/ARM_MCU_xlconstant_1_0/ARM_MCU_xlconstant_1_0_in_context.xdc] for cell 'ARM_MCU_i/xlconstant_1'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_axi_bram_ctrl_0_0/ARM_MCU_axi_bram_ctrl_0_0/ARM_MCU_axi_bram_ctrl_0_0_in_context.xdc] for cell 'ARM_MCU_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_axi_bram_ctrl_0_0/ARM_MCU_axi_bram_ctrl_0_0/ARM_MCU_axi_bram_ctrl_0_0_in_context.xdc] for cell 'ARM_MCU_i/axi_bram_ctrl_0'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_axi_bram_ctrl_0_bram_0/ARM_MCU_axi_bram_ctrl_0_bram_0/ARM_MCU_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'ARM_MCU_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_axi_bram_ctrl_0_bram_0/ARM_MCU_axi_bram_ctrl_0_bram_0/ARM_MCU_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'ARM_MCU_i/axi_bram_ctrl_0_bram'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_axi_uartlite_0_0/ARM_MCU_axi_uartlite_0_0/ARM_MCU_axi_uartlite_0_0_in_context.xdc] for cell 'ARM_MCU_i/axi_uartlite_0'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_axi_uartlite_0_0/ARM_MCU_axi_uartlite_0_0/ARM_MCU_axi_uartlite_0_0_in_context.xdc] for cell 'ARM_MCU_i/axi_uartlite_0'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_tri_io_buf_0_0/ARM_MCU_tri_io_buf_0_0/ARM_MCU_tri_io_buf_0_0_in_context.xdc] for cell 'ARM_MCU_i/tri_io_buf_0'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_tri_io_buf_0_0/ARM_MCU_tri_io_buf_0_0/ARM_MCU_tri_io_buf_0_0_in_context.xdc] for cell 'ARM_MCU_i/tri_io_buf_0'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_auto_pc_0/ARM_MCU_auto_pc_0/ARM_MCU_auto_pc_0_in_context.xdc] for cell 'ARM_MCU_i/axi_interconnect_0/m01_couplers/auto_pc'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_auto_pc_0/ARM_MCU_auto_pc_0/ARM_MCU_auto_pc_0_in_context.xdc] for cell 'ARM_MCU_i/axi_interconnect_0/m01_couplers/auto_pc'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_auto_pc_2/ARM_MCU_auto_pc_2/ARM_MCU_auto_pc_1_in_context.xdc] for cell 'ARM_MCU_i/axi_interconnect_0/s01_couplers/auto_pc'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_auto_pc_2/ARM_MCU_auto_pc_2/ARM_MCU_auto_pc_1_in_context.xdc] for cell 'ARM_MCU_i/axi_interconnect_0/s01_couplers/auto_pc'
+Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_auto_pc_1/ARM_MCU_auto_pc_1/ARM_MCU_auto_pc_1_in_context.xdc] for cell 'ARM_MCU_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_auto_pc_1/ARM_MCU_auto_pc_1/ARM_MCU_auto_pc_1_in_context.xdc] for cell 'ARM_MCU_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/usb104_a7.xdc]
+Finished Parsing XDC File [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/usb104_a7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/usb104_a7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ARM_MCU_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ARM_MCU_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'TCK'. [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc:103]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc:103]
+WARNING: [Vivado 12-627] No clocks matched 'TCK'. [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc:104]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc:104]
+WARNING: [Vivado 12-627] No clocks matched 'TCK'. [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc:105]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc:105]
+Finished Parsing XDC File [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ARM_MCU_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/constrs_1/new/timing_usb104_a7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ARM_MCU_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ARM_MCU_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 783.727 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 783.727 ; gain = 467.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 783.727 ; gain = 467.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_clk_wiz_0_0/ARM_MCU_clk_wiz_0_0/ARM_MCU_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_clk_wiz_0_0/ARM_MCU_clk_wiz_0_0/ARM_MCU_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TDO[0]. (constraint file  e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_tri_io_buf_0_0/ARM_MCU_tri_io_buf_0_0/ARM_MCU_tri_io_buf_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TDO[0]. (constraint file  e:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.srcs/sources_1/bd/ARM_MCU/ip/ARM_MCU_tri_io_buf_0_0/ARM_MCU_tri_io_buf_0_0/ARM_MCU_tri_io_buf_0_0_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/CORTEXM3_AXI_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/External_Reset. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/System_Reset. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/util_vector_logic_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/util_vector_logic_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/util_vector_logic_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/Interconnect_Reset_AND. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/Reset_and_Clocks/Peripheral_Reset_AND. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/tri_io_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/axi_interconnect_0/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/axi_interconnect_0/s01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ARM_MCU_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 783.727 ; gain = 467.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 783.727 ; gain = 467.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design ARM_MCU_axi_interconnect_0_0 has unconnected port S01_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 783.727 ; gain = 467.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ARM_MCU_i/Reset_and_Clocks/clk_wiz_0/clk_out1' to pin 'ARM_MCU_i/Reset_and_Clocks/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ARM_MCU_i/axi_bram_ctrl_0/bram_clk_a' to pin 'ARM_MCU_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 805.219 ; gain = 488.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 805.371 ; gain = 489.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 806.555 ; gain = 490.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 806.555 ; gain = 490.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 806.555 ; gain = 490.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 806.555 ; gain = 490.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 806.555 ; gain = 490.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 806.555 ; gain = 490.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 806.555 ; gain = 490.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |ARM_MCU_xbar_0                 |         1|
+|2     |ARM_MCU_auto_pc_0              |         1|
+|3     |ARM_MCU_auto_pc_1              |         1|
+|4     |ARM_MCU_auto_pc_2              |         1|
+|5     |ARM_MCU_CORTEXM3_AXI_0_0       |         1|
+|6     |ARM_MCU_axi_bram_ctrl_0_0      |         1|
+|7     |ARM_MCU_axi_bram_ctrl_0_bram_0 |         1|
+|8     |ARM_MCU_axi_uartlite_0_0       |         1|
+|9     |ARM_MCU_tri_io_buf_0_0         |         1|
+|10    |ARM_MCU_xlconstant_1_0         |         1|
+|11    |ARM_MCU_rst_clk_wiz_0_50M_0    |         1|
+|12    |ARM_MCU_util_vector_logic_4_0  |         1|
+|13    |ARM_MCU_util_vector_logic_5_0  |         1|
+|14    |ARM_MCU_proc_sys_reset_0_0     |         1|
+|15    |ARM_MCU_clk_wiz_0_0            |         1|
+|16    |ARM_MCU_util_vector_logic_0_0  |         1|
+|17    |ARM_MCU_util_vector_logic_1_0  |         1|
+|18    |ARM_MCU_util_vector_logic_2_0  |         1|
+|19    |ARM_MCU_util_vector_logic_3_0  |         1|
+|20    |ARM_MCU_xlconstant_0_0         |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |ARM_MCU_CORTEXM3_AXI_0_0       |     1|
+|2     |ARM_MCU_auto_pc_0              |     1|
+|3     |ARM_MCU_auto_pc_1              |     1|
+|4     |ARM_MCU_auto_pc_2              |     1|
+|5     |ARM_MCU_axi_bram_ctrl_0_0      |     1|
+|6     |ARM_MCU_axi_bram_ctrl_0_bram_0 |     1|
+|7     |ARM_MCU_axi_uartlite_0_0       |     1|
+|8     |ARM_MCU_clk_wiz_0_0            |     1|
+|9     |ARM_MCU_proc_sys_reset_0_0     |     1|
+|10    |ARM_MCU_rst_clk_wiz_0_50M_0    |     1|
+|11    |ARM_MCU_tri_io_buf_0_0         |     1|
+|12    |ARM_MCU_util_vector_logic_0_0  |     1|
+|13    |ARM_MCU_util_vector_logic_1_0  |     1|
+|14    |ARM_MCU_util_vector_logic_2_0  |     1|
+|15    |ARM_MCU_util_vector_logic_3_0  |     1|
+|16    |ARM_MCU_util_vector_logic_4_0  |     1|
+|17    |ARM_MCU_util_vector_logic_5_0  |     1|
+|18    |ARM_MCU_xbar_0                 |     1|
+|19    |ARM_MCU_xlconstant_0_0         |     1|
+|20    |ARM_MCU_xlconstant_1_0         |     1|
+|21    |IBUF                           |     6|
+|22    |OBUF                           |     1|
++------+-------------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------+-----------------------------+------+
+|      |Instance               |Module                       |Cells |
++------+-----------------------+-----------------------------+------+
+|1     |top                    |                             |  1494|
+|2     |  ARM_MCU_i            |ARM_MCU                      |  1487|
+|3     |    axi_interconnect_0 |ARM_MCU_axi_interconnect_0_0 |   995|
+|4     |      m01_couplers     |m01_couplers_imp_1Q9BXLB     |   155|
+|5     |      s00_couplers     |s00_couplers_imp_1QF9XJK     |   208|
+|6     |      s01_couplers     |s01_couplers_imp_SOI53N      |   208|
+|7     |    Reset_and_Clocks   |Reset_and_Clocks_imp_1CGMSPC |    19|
++------+-----------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 806.555 ; gain = 490.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 806.566 ; gain = 184.094
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 806.566 ; gain = 490.219
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 39 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 825.508 ; gain = 518.980
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/SW/Vivado_Projetcs/ARM_CM3_A7/ARM_CM3_A7.runs/synth_1/ARM_MCU_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ARM_MCU_wrapper_utilization_synth.rpt -pb ARM_MCU_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 825.508 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 24 22:01:20 2024...

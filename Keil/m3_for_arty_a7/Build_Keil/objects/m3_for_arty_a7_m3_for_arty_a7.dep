@@ -1,0 +1,23 @@
+Dependencies for Project 'm3_for_arty_a7', Target 'm3_for_arty_a7': (DO NOT MODIFY !)
+F (..\cmsis\Device\Source\ARTY_CM3\system_ARTY_CM3.c)(0x5D27354F)(-c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork -I ..\cmsis\CMSIS\Include -I ..\cmsis\Device\Include -I ..\cmsis\Device\Include\ARTY_CM3 -I ..\main -I ..\gpio -I ..\uart -I ..\spi -I ..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include-I.\RTE\_m3_for_arty_a7-IE:\SW\Keil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IE:\SW\Keil\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="526" -D_RTE_ -DARMCM3 -DCORTEX_M3 -DARTY_CM3-o .\objects\system_arty_cm3.o --omf_browse .\objects\system_arty_cm3.crf --depend .\objects\system_arty_cm3.d)
+I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x5D27354F)
+I (..\cmsis\CMSIS\Include\core_CM3.h)(0x5D27354F)
+I (E:\SW\Keil\ARM\ARMCC\include\stdint.h)(0x599EFE66)
+I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x5D27354F)
+I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x5D27354F)
+I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x5D27354F)
+F (..\cmsis\Device\Source\ARTY_CM3\ARM\startup_ARTY_CM3.s)(0x5D134FB8)(--cpu Cortex-M3 --li --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_m3_for_arty_a7-IE:\SW\Keil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IE:\SW\Keil\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM3\Include--pd "__UVISION_VERSION SETA 526" --pd "_RTE_ SETA 1" --pd "ARMCM3 SETA 1"--list .\objects\startup_arty_cm3.lst --xref -o .\objects\startup_arty_cm3.o --depend .\objects\startup_arty_cm3.d)
+F (..\main\main.c)(0x65F8746F)(-c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork -I ..\cmsis\CMSIS\Include -I ..\cmsis\Device\Include -I ..\cmsis\Device\Include\ARTY_CM3 -I ..\main -I ..\gpio -I ..\uart -I ..\spi -I ..\sdk_workspace\standalone_bsp_0\Cortex_M3_0\include-I.\RTE\_m3_for_arty_a7-IE:\SW\Keil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IE:\SW\Keil\ARM\PACK\ARM\CMSIS\5.4.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="526" -D_RTE_ -DARMCM3 -DCORTEX_M3 -DARTY_CM3-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (E:\SW\Keil\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+I (E:\SW\Keil\ARM\ARMCC\include\ctype.h)(0x599EFE66)
+I (E:\SW\Keil\ARM\ARMCC\include\string.h)(0x599EFE64)
+I (E:\SW\Keil\ARM\ARMCC\include\stdlib.h)(0x599EFE64)
+I (E:\SW\Keil\ARM\ARMCC\include\time.h)(0x599EFE66)
+I (..\main\m3_for_arty.h)(0x5D27354F)
+I (..\cmsis\Device\Include\peripherallink.h)(0x5D27354F)
+I (..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h)(0x5D27354F)
+I (..\cmsis\CMSIS\Include\core_CM3.h)(0x5D27354F)
+I (E:\SW\Keil\ARM\ARMCC\include\stdint.h)(0x599EFE66)
+I (..\cmsis\CMSIS\Include\core_cmInstr.h)(0x5D27354F)
+I (..\cmsis\CMSIS\Include\core_cmFunc.h)(0x5D27354F)
+I (..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h)(0x5D27354F)

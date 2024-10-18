@@ -1,0 +1,14 @@
+.\objects\main.o: ..\main\main.c
+.\objects\main.o: E:\SW\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: E:\SW\Keil\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\main.o: E:\SW\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: E:\SW\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: E:\SW\Keil\ARM\ARMCC\Bin\..\include\time.h
+.\objects\main.o: ..\main\m3_for_arty.h
+.\objects\main.o: ..\cmsis\Device\Include\peripherallink.h
+.\objects\main.o: ..\cmsis\Device\Include\ARTY_CM3\ARTY_CM3.h
+.\objects\main.o: ..\cmsis\CMSIS\Include\core_CM3.h
+.\objects\main.o: E:\SW\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: ..\cmsis\CMSIS\Include\core_cmInstr.h
+.\objects\main.o: ..\cmsis\CMSIS\Include\core_cmFunc.h
+.\objects\main.o: ..\cmsis\Device\Include\ARTY_CM3\system_ARTY_CM3.h

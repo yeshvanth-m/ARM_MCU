@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\objects\system_arty_cm3.o"
+".\objects\startup_arty_cm3.o"
+".\objects\main.o"
+--strict --scatter ".\objects\m3_for_arty_a7.sct"
+--entry=Reset_Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\objects\m3_for_arty_a7.map" -o .\objects\m3_for_arty_a7.axf
